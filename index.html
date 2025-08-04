@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site de Notícias</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Site de Notícias</h1>
+      <nav>
+        <ul>
+          <li><a href="#ultimas">Recentes</a></li>
+          <li><a href="#mundo">Global</a></li>
+          <li><a href="#tecnologia">Tecnologias</a></li>
+          <li><a href="#esportes">Esportes</a></li>
+          <li><a href="#contato">Configurações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Bem-vindo ao Melhor Site de Notícias</h2>
+    <p>Notícias de todo o mundo, recente e de fontes seguras!.</p>
+  </section>
+
+  <section id="ultimas" class="noticias">
+    <h2>Últimas Notícias</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Notícia 1" />
+        <h3>Avanço da Inteligência Artificial</h3>
+        <p>Novas tecnologias prometem transformar a forma como vivemos e trabalhamos.</p>
+        <a href="#">Leia mais</a>
+      </article>
+
+      <article class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Notícia 2" />
+        <h3>Economia Global em Alerta</h3>
+        <p>Mercados sofrem quedas após tensões comerciais entre grandes potências.</p>
+        <a href="#">Leia mais</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="mundo" class="noticias">
+    <h2>Notícias do Mundo</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Notícia Mundo" />
+        <h3>Crises Políticas no Oriente</h3>
+        <p>Conflitos afetam relações diplomáticas entre países vizinhos.</p>
+        <a href="#">Leia mais</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="tecnologia" class="noticias">
+    <h2>Tecnologia</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Tech" />
+        <h3>Revolução dos Carros Autônomos</h3>
+        <p>Empresas disputam liderança em veículos sem motorista.</p>
+        <a href="#">Leia mais</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="esportes" class="noticias">
+    <h2>Esportes</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Esporte" />
+        <h3>Final do Campeonato Nacional</h3>
+        <p>Times se preparam para o jogo mais importante da temporada.</p>
+        <a href="#">Leia mais</a>
+      </article>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>&copy; 2025 Portal de Notícias. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #fcfbfb;
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  header {
+    background: #222364;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #1c1858;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #b4baf0, #959ec7);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .noticias {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .noticias h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #162644;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(202, 180, 180, 0.1);
+    width: calc(50% - 10px);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    padding: 15* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #3f1010;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  header {
+    background: #1e1e1e;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #222, #555);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .noticias {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .noticias h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ff6347;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    padding: 15px 20px 5px;
+    font-size: 1.3em;
+  }
+  
+  .card p {
+    padding: 0 20px 10px;
+  }
+  
+  .card a {
+    display: block;
+    background: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .card a:hover {
+    background: #e5533d;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  px 20px 5px;
+    font-size: 1.3em;
+  }
+  
+  .card p {
+    padding: 0 20px 10px;
+  }
+  
+  .card a {
+    display: block;
+    background: #202163;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .card a:hover {
+    background: #e5533d;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff1f1;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+</style>
+</html>
+
